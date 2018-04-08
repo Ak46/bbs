@@ -1,0 +1,19 @@
+#id-blog-all {
+    margin: 20px 50px;
+}
+
+#id-node {
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 20px 5px;
+}
+
+.node-spacing {
+    margin: 15px;
+}
+
+#id-button-add {
+    position: absolute;
+    left: 458px;
+    margin-top: -54px;
+}

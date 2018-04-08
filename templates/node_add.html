@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}
+
+{% block top %}
+    <div>
+        {% for n in nodes %}
+            <div>{{ n.id }}: {{ n.keywords }}</div>
+            <!--<div>{{ n.keywords }}</div>-->
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form action="/node/add" method="post">
+            <input type="hidden" name="parent_id">
+            <input type="text" name="keywords" placeholder="请输入板块名">
+            <button>add</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,132 @@
+19:44:46 当前登陆的用户:  gua
+19:45:42 当前登陆的用户:  gua
+19:47:34 当前登陆的用户:  gua
+19:49:14 当前登陆的用户:  gua
+19:50:04 当前登陆的用户:  gua
+19:50:09 user detail 当前用户1:gua
+19:51:49 user detail 当前用户1:gua
+19:51:58 user detail 当前用户1:gua
+19:52:16 node index []
+19:52:21 node index [<Node 1>]
+19:52:28 node index [<Node 1>, <Node 2>]
+19:52:40 node index [<Node 1>, <Node 2>, <Node 3>]
+19:52:52 node:  <Node 1>
+19:52:52 blog index user img:and blog:[]
+19:53:23 blog add form.get(parent_id) static/img/4f89f13a-3feb-448b-a72f-9961cd9ee635.jpg
+19:53:41 node:  <Node 2>
+19:53:41 blog index user img:and blog:[]
+19:53:43 node:  <Node 1>
+19:53:43 blog index user img:and blog:[<Blog 1>]
+19:53:43 node:  <Node 2>
+19:53:43 blog index user img:and blog:[]
+19:53:44 node:  <Node 3>
+19:53:44 blog index user img:and blog:[]
+19:53:44 node:  <Node 2>
+19:53:44 blog index user img:and blog:[]
+19:53:45 node:  <Node 1>
+19:53:45 blog index user img:and blog:[<Blog 1>]
+19:53:47 node:  <Node 2>
+19:53:47 blog index user img:and blog:[]
+19:53:50 用户登出成功
+19:53:58 node:  <Node 3>
+19:53:58 blog index user img:and blog:[]
+19:54:00 node:  <Node 2>
+19:54:00 blog index user img:and blog:[]
+19:54:01 node:  <Node 1>
+19:54:01 blog index user img:and blog:[<Blog 1>]
+19:54:07 user detail 当前用户1:gua
+19:54:14 user detail 当前用户1:gua
+19:55:35 user detail 当前用户1:gua
+19:55:41 user detail 当前用户1:gua
+19:56:13 blog add form.get(parent_id) static/img/8ba97ac7-2231-47eb-8950-1233aaca16d8.jpg
+19:57:00 所有的评论, []
+19:57:13 comment fa ImmutableMultiDict([('username', 'gua'), ('blog_id', '2'), ('user_id', '1'), ('comment', '加载成功!!!')])
+19:57:13 所有的评论, [<Comment 1>]
+19:57:23 comment fa ImmutableMultiDict([('username', 'gua'), ('blog_id', '2'), ('user_id', '1'), ('comment', '棒棒哒!!!')])
+19:57:23 所有的评论, [<Comment 1>, <Comment 2>]
+19:57:29 所有的评论, []
+19:57:35 comment fa ImmutableMultiDict([('username', 'gua'), ('blog_id', '1'), ('user_id', '1'), ('comment', '头像坏了\r\n')])
+19:57:35 所有的评论, [<Comment 3>]
+19:57:39 node:  <Node 1>
+19:57:39 blog index user img:and blog:[<Blog 1>]
+19:57:40 node:  <Node 2>
+19:57:40 blog index user img:and blog:[<Blog 2>]
+19:57:41 node:  <Node 3>
+19:57:41 blog index user img:and blog:[]
+19:57:42 node:  <Node 1>
+19:57:42 blog index user img:and blog:[<Blog 1>]
+19:57:44 node:  <Node 2>
+19:57:44 blog index user img:and blog:[<Blog 2>]
+19:57:45 node:  <Node 1>
+19:57:45 blog index user img:and blog:[<Blog 1>]
+19:57:46 node:  <Node 2>
+19:57:46 blog index user img:and blog:[<Blog 2>]
+19:57:46 node:  <Node 3>
+19:57:46 blog index user img:and blog:[]
+19:58:14 blog add form.get(parent_id) static/img/8ba97ac7-2231-47eb-8950-1233aaca16d8.jpg
+19:58:19 node:  <Node 2>
+19:58:19 blog index user img:and blog:[<Blog 2>]
+19:58:20 node:  <Node 1>
+19:58:20 blog index user img:and blog:[<Blog 1>]
+19:58:21 node:  <Node 3>
+19:58:21 blog index user img:and blog:[<Blog 3>]
+19:58:22 node:  <Node 2>
+19:58:22 blog index user img:and blog:[<Blog 2>]
+19:58:23 node:  <Node 1>
+19:58:23 blog index user img:and blog:[<Blog 1>]
+19:58:25 node:  <Node 3>
+19:58:25 blog index user img:and blog:[<Blog 3>]
+19:58:28 所有的评论, []
+19:58:37 comment fa ImmutableMultiDict([('username', 'gua'), ('blog_id', '3'), ('user_id', '1'), ('comment', '囧囧囧囧囧囧囧三三三三三三三三三三三三三三')])
+19:58:37 所有的评论, [<Comment 4>]
+19:59:15 当前登陆的用户:  gua1
+19:59:18 user detail 当前用户2:gua1
+20:00:03 user detail 当前用户2:gua1
+20:00:34 blog add form.get(parent_id) static/img/f988d141-da4d-4d6b-8b0e-e63f7e22a211.jpg
+20:00:47 node:  <Node 3>
+20:00:47 blog index user img:and blog:[<Blog 3>]
+20:00:48 node:  <Node 2>
+20:00:48 blog index user img:and blog:[<Blog 2>, <Blog 4>]
+20:00:51 node:  <Node 1>
+20:00:51 blog index user img:and blog:[<Blog 1>]
+20:00:52 user detail 当前用户1:gua
+20:49:06 node:  <Node 2>
+20:49:06 blog index user img:and blog:[<Blog 2>, <Blog 4>]
+20:49:08 node:  <Node 3>
+20:49:08 blog index user img:and blog:[<Blog 3>]
+20:49:09 node:  <Node 1>
+20:49:09 blog index user img:and blog:[<Blog 1>]
+20:49:10 node:  <Node 2>
+20:49:10 blog index user img:and blog:[<Blog 2>, <Blog 4>]
+20:49:13 node:  <Node 3>
+20:49:13 blog index user img:and blog:[<Blog 3>]
+20:49:14 node:  <Node 2>
+20:49:14 blog index user img:and blog:[<Blog 2>, <Blog 4>]
+20:49:15 node:  <Node 1>
+20:49:15 blog index user img:and blog:[<Blog 1>]
+20:49:16 node:  <Node 2>
+20:49:16 blog index user img:and blog:[<Blog 2>, <Blog 4>]
+20:49:18 node:  <Node 3>
+20:49:18 blog index user img:and blog:[<Blog 3>]
+10:27:01 node:  <Node 1>
+10:27:01 blog index user img:and blog:[<Blog 1>]
+10:27:10 node:  <Node 2>
+10:27:10 blog index user img:and blog:[<Blog 2>, <Blog 4>]
+10:27:16 node:  <Node 3>
+10:27:16 blog index user img:and blog:[<Blog 3>]
+10:27:24 node:  <Node 3>
+10:27:24 blog index user img:and blog:[<Blog 3>]
+10:34:03 当前登陆的用户:  用户3
+10:34:45 blog add form.get(parent_id) None
+10:35:10 user detail 当前用户3:用户3
+10:36:07 user detail 当前用户3:用户3
+10:38:39 当前登陆的用户:  用户3
+10:39:07 blog add form.get(parent_id) static/img/f6995c4a-1462-4c31-bf63-ed3beb965284.jpg
+10:39:23 所有的评论, [<Comment 1>, <Comment 2>]
+10:39:31 node:  <Node 2>
+10:39:31 blog index user img:and blog:[<Blog 2>, <Blog 4>]
+10:39:32 node:  <Node 3>
+10:39:32 blog index user img:and blog:[<Blog 3>]
+10:39:33 node:  <Node 1>
+10:39:33 blog index user img:and blog:[<Blog 1>, <Blog 5>]
+10:39:34 user detail 当前用户3:用户3

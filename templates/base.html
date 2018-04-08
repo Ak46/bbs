@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}title{% endblock %}</title>
+    {% block scripts %}
+    <!--这里放css的引用-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/base.css">
+    <link rel="stylesheet" href="/static/css/blog.css">
+    {% endblock %}
+</head>
+<body>
+<div id="base-top">
+    {% block top %}
+    <!--<div>-->
+        <!--<ul><a href="#">主页</a></ul>-->
+    <!--</div>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="padding: 25px;">
+            <a class="navbar-brand" href="/">主页</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/user/detail">个人信息 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user">login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user/sing">Sin up</a>
+                    </li>
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </nav>
+    {% endblock %}
+</div>
+<div id="base-content">
+    {% block content %}
+    <!--放入内容-->
+    {% endblock %}
+</div>
+<div id="base-footer">
+    {% block footer %}
+    <!--页脚-->
+    {% endblock %}
+</div>
+</body>
+</html>

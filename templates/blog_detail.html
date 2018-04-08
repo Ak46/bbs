@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ b.title }}{% endblock %}
+
+{% block scrips %}
+{% endblock %}
+
+{% block top %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <div>
+        <h1 style="display: block; text-align: center;">{{ b.title }}</h1>
+        <span style="position: relative;left: 75%; bottom: -30px;">{{ b.create_time }}</span>
+        <span style="position: absolute; left: 65%; bottom: 80%;">{{ b.author }}</span>
+        <p style="position: relative; top: 75px; font-size: 20px;color: #131415;text-align: center;">
+            {{ b.content }}
+        </p>
+    </div>
+    <div id="id-blog-comments" style="margin: 15%;">
+        <div id="id-comment-form">
+            <form action="/comment/fa" method="post">
+                <input type="hidden" name="blog_id" value="{{ b.id }}">
+                 <br>
+                <input type="hidden" name="user_id" value="{{ user.id }}">
+                <br>
+                 <input type="hidden" name="username" value="{{ user.username }}">
+                <br>
+                <textarea name="comment" placeholder="请输入评论内容" cols="50" rows="2"></textarea>
+                <button type="submit" style="position: relative; top: -9px;">发表评论</button>
+             </form>
+        </div>
+        <div class="blog-comment-items">
+        {% for c in comment %}
+            <div class="comment-item" style="border: solid; border-style: groove;
+                margin: 10px 0px; padding: 13px; border-color: #e91e6312; width: 55%; border-radius: 50px; ">
+                <span class="comment-content">{{ c.comment }}
+                    <span style="position: relative; left: 150px; top:14px;  ">@{{ c.username }}</span></span>
+                <span class="comment-time" style="position: relative; top: 15px;
+                left: 160px; font-size:5px; ">{{ c.create_time }}</span>
+                <span style="position: relative;  top: -15px; font-size: 10px;">{{ loop.index }}楼</span>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <div id="id-user-detail">
+        <h1 id="id-user-img"><img src="{{ user.img_src }}"></h1>
+        用户: {{ user.username }}
+    </div>
+
+    <div id="id-uhir-img">
+        <form action="/user/upload" method="post" enctype="multipart/form-data">
+            <lable>
+                <input type="file" name="uploaded">
+            </lable>
+            <lable>上传
+                <button type="submit">浏览器原生上传</button>
+            </lable>
+        </form>
+    </div>
+{% endblock %}

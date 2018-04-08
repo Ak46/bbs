@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户主页</title>
+</head>
+<body>
+    <div>
+        <form action="/user/login" method="post">
+            <input type="hidden" name="xfrs" value="{{ xfrs }}">
+            <input type="text" name="username" placeholder="请输入用户名">
+            <br>
+            <input type="password" name="password" placeholder="请输入密码">
+            <br>
+            <button>login</button>
+             <per>{{ msgs }}</per>
+        </form>
+    </div>
+    <div>
+        <form action="/user/register" method="post">
+            <input type="text" name="username" placeholder="请输入用户名">
+            <br>
+            <input type="password" name="password" placeholder="请输入密码">
+            <br>
+            <button>register</button>
+            <per>{{ msg }}</per>
+        </form>
+    </div>
+</body>
+</html>
