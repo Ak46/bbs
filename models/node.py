@@ -9,7 +9,7 @@ class Node(db.Model, ReprMixin):
     # content = db.Column(db.String())
     keywords = db.Column(db.String(100))
     # permit = db.Column(db.String())
-    master = db.Column(db.String())
+    master = db.Column(db.String(100))
     parent_id = db.Column(db.Integer, default=0)
 
     # blog_all = db.relationship('Blog', backref='user')

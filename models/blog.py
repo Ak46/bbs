@@ -23,13 +23,13 @@ from . import utctime, data_time
 class Blog(db.Model, ReprMixin):
     __tablename__ = 'blogs'
     id = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.Text)
-    content = db.Column(db.Text)
+    title = db.Column(db.String(200))
+    content = db.Column(db.String(2000))
     create_time = db.Column(db.Integer, default=data_time())
     author = db.Column(db.Text)
     views = db.Column(db.Integer, default=0)
     len_comment = db.Column(db.Integer, default=0)
-    user_img = db.Column(db.Text)
+    user_img = db.Column(db.String(200))
 
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
     board_id = db.Column(db.Integer, db.ForeignKey('nodes.id'))
@@ -59,8 +59,8 @@ class Blog(db.Model, ReprMixin):
 class Comment(db.Model, ReprMixin):
     __tablename__ = 'comments'
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.Text())
-    comment = db.Column(db.String(200))
+    username = db.Column(db.String(20))
+    comment = db.Column(db.String(1000))
     create_time = db.Column(db.Integer, default=data_time())
 
     blog_id = db.Column(db.Integer, db.ForeignKey('blogs.id'))

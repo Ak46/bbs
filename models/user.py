@@ -9,9 +9,9 @@ class User(db.Model, ReprMixin):
     # 这些都是内置的 __tablename__ 是表名
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String())
-    password = db.Column(db.String())
-    img_src = db.Column(db.String())
+    username = db.Column(db.String(100))
+    password = db.Column(db.String(100))
+    img_src = db.Column(db.String(200))
     # qq = db.Column(db.String())
     # email = db.Column(db.String())
     # signature = db.Column(db.String())
