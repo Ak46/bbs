@@ -43,7 +43,7 @@ def current_user():
 def login_required(f):
     @wraps(f)
     def function(*args, **kwargs):
-        print('current user check', current_user())
+        log('current user check', current_user())
         if current_user() is None:
             # 用户未登录, 重定向到登录页面
             return redirect(url_for('user.index'))

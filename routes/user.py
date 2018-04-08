@@ -21,7 +21,7 @@ def random_string():
 def index():
     xfrs = random_string()
     xfrs_dict[xfrs] = 0
-    print('xfrs', xfrs_dict)
+    log('xfrs', xfrs_dict)
     return render_template('users/login_index.html', xfrs=xfrs)
 
 

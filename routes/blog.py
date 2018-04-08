@@ -51,10 +51,10 @@ def detail(id):
 @login_required
 def new():
     u = current_user()
-    print('发表新微薄', u.id, u.username )
+    log('发表新微薄', u.id, u.username )
     # 得到所有的board_id
     bid = Node.query.all()
-    print('发表新微博board_id', bid)
+    log('发表新微博board_id', bid)
     return render_template('blog_new.html', user=u, board=bid)
 
 
